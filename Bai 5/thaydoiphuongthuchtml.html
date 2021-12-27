@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showAlert1()">Cách 1</button>
+    <button id = "onClick">Cách 2</button>
+</body>
+</html>
+<script>
+    function showAlert1(){
+        alert("Đã làm cách 1");
+    }
+    function showAlert2(){
+       document.write("Đã làm cách 2");
+     }
+    var button2= document.getElementById("onClick");
+    button2.addEventListener("click", showAlert2);
+</script>

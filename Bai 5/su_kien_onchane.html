@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Danh sách các đội bóng</h3>
+    <select id="myClub" onchange="footballClub()">
+        <option value="The Blue">Chelsea</option>
+        <option value="Man đỏ">Manchester United</option>
+        <option value="Man xì tin">Manchester City</option>
+        <option value="The Kop">Liverpool</option>
+        <option value="Chú Tư">Arsenal</option>
+        <option value="Gà trống">Tottenham Hotspur</option>
+    </select>
+    <select id="myClub2">
+        <option value="The Blue">Chelsea</option>
+        <option value="Man đỏ">Manchester United</option>
+        <option value="Man xì tin">Manchester City</option>
+        <option value="The Kop">Liverpool</option>
+        <option value="Chú Tư">Arsenal</option>
+        <option value="Gà trống">Tottenham Hotspur</option>
+    </select>
+</body>
+</html>
+<script>
+    //Cách 1
+    function footballClub(){
+        var club = document.getElementById("myClub").value;
+        alert(club);
+    }
+    //Cách 2
+    var club2 = document.getElementById("myClub2");
+    club2.addEventListener("change", footballClub2);
+    function footballClub2(){
+    var clubF = document.getElementById("myClub2").value;
+    alert(clubF);
+    }
+</script>
